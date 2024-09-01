@@ -89,8 +89,6 @@ int main() {
 int* create_array(int* array,int size) {
     if (array != NULL)
         free(array);
-
-    int* array = (int*)calloc(size, sizeof(int));
     array = (int*)calloc(size, sizeof(int));
     if (array == NULL)
         exit(EXIT_FAILURE);
